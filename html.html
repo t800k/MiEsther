@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mi Luz❤️ </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="flash-overlay" id="flash"></div>
+    <canvas id="bgCanvas"></canvas>
+    <canvas id="fwCanvas"></canvas>
+    <canvas id="mainCanvas"></canvas>
+
+    <div class="star-wrapper" id="starWrap" role="button" aria-label="Toca la estrella" tabindex="0">
+        <div class="star-halo-3"></div>
+        <div class="star-halo-2"></div>
+        <div class="star-halo-1"></div>
+        <div class="star-rays-container" id="rays1"></div>
+        <div class="star-rays-container-2" id="rays2"></div>
+        <div class="orbit-ring" style="width:280px;height:280px;animation-duration:6s;">
+            <div class="orbit-dot" style="top:-2px;left:50%;"></div>
+        </div>
+        <div class="orbit-ring" style="width:350px;height:350px;animation-duration:9s;animation-direction:reverse;">
+            <div class="orbit-dot" style="top:50%;right:-2px;width:3px;height:3px;"></div>
+        </div>
+        <div class="orbit-ring" style="width:200px;height:200px;animation-duration:4s;">
+            <div class="orbit-dot" style="bottom:-2px;left:30%;width:3px;height:3px;"></div>
+        </div>
+        <div class="star-core">
+            <svg class="star-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FFF8C6"/>
+                        <stop offset="25%" stop-color="#FFD700"/>
+                        <stop offset="50%" stop-color="#FFA500"/>
+                        <stop offset="75%" stop-color="#FFD700"/>
+                        <stop offset="100%" stop-color="#FFF3A0"/>
+                    </linearGradient>
+                </defs>
+                <path d="M50 2 L62 36 L98 36 L69 57 L80 92 L50 72 L20 92 L31 57 L2 36 L38 36 Z" fill="url(#sg)"/>
+            </svg>
+        </div>
+    </div>
+
+    <p class="hint" id="hint">Toca la estrella</p>
+
+    <div class="text-stage" id="textStage" aria-live="polite">
+        <div class="line-top"></div>
+        <div class="greeting">Feliz Cumpleaños</div>
+        <div class="name">Luz</div>
+        <div class="line-bottom"></div>
+        <div class="submessage">Felices 19 amor mio. Que la vida te devuelva siempre toda la luz que tú entregas, porque eso eres, sin duda, alguien muy especial y profundamente querida. Gracias por existir❤️</div>
+        <div class="year-badge">06 / 04 / 2026</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
